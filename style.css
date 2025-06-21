@@ -20,8 +20,12 @@ header {
 }
 
 header .name {
-  color: #51A6E7;
+  color: #E7E7E7;
   font-weight: bold;
+}
+
+header nav {
+  margin-right: 1rem;
 }
 
 header nav a {
@@ -49,6 +53,18 @@ main section {
   align-items: center;
   justify-content: center;
   overflow: hidden;
+}
+
+.scrolly {
+  flex-direction: column;
+  min-height: auto;
+}
+
+.scrolly .step {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .hero {
