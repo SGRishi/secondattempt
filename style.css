@@ -42,7 +42,11 @@ header nav a {
 
 main section {
   position: relative;
+ bqdmde-codex/create-scrollytelling-resume-website
   min-height: 100vh;
+
+  height: 100vh;
+ main
   background-size: cover;
   background-position: center;
   display: flex;
@@ -92,6 +96,7 @@ main section {
 h1, h2, p {
   margin: 0 0 1rem;
 }
+ bqdmde-codex/create-scrollytelling-resume-website
 
 @media (max-width: 600px) {
   header {
@@ -115,3 +120,5 @@ h1, h2, p {
     height: 40px;
   }
 }
+
+ main
