@@ -47,12 +47,15 @@ function handleSteps() {
     if (rect.top <= center && rect.bottom >= center) {
       overlay.classList.add('show');
       overlay.classList.remove('exit-up', 'exit-down');
+      step.classList.add('active');
     } else if (rect.top < center) {
       overlay.classList.remove('show');
       overlay.classList.add('exit-up');
+      step.classList.remove('active');
     } else {
       overlay.classList.remove('show');
       overlay.classList.add('exit-down');
+      step.classList.remove('active');
     }
   });
 }

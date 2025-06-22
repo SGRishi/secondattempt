@@ -61,6 +61,7 @@ main section {
   flex-direction: column;
   min-height: auto;
   background-attachment: fixed;
+  scroll-snap-type: y mandatory;
 }
 
 .scrolly .step {
@@ -69,6 +70,11 @@ main section {
   align-items: center;
   justify-content: center;
   position: relative;
+  scroll-snap-align: start;
+  transition: transform 0.6s ease;
+}
+.scrolly .step.active {
+  transform: scale(1.05);
 }
 
 .scrolly .step .overlay {
