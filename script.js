@@ -12,7 +12,7 @@ window.addEventListener('resize', updateProgress);
 updateProgress();
 
 // Animate text overlays on scroll
-const genericOverlays = document.querySelectorAll('section:not(.scrolly) .overlay');
+const genericOverlays = document.querySelectorAll('section:not(.scrolly) .overlay.main');
 const observer = new IntersectionObserver(entries => {
   entries.forEach(entry => {
     if (entry.isIntersecting) {
@@ -27,10 +27,20 @@ genericOverlays.forEach(el => observer.observe(el));
 
 const steps = document.querySelectorAll('.scrolly .step');
 
+// Toggle detail overlays
+document.querySelectorAll('.overlay.main').forEach(main => {
+  const details = main.nextElementSibling;
+  if (details && details.classList.contains('details')) {
+    main.addEventListener('click', () => {
+      details.classList.toggle('visible');
+    });
+  }
+});
+
 function handleSteps() {
   const center = window.innerHeight / 2;
   steps.forEach(step => {
-    const overlay = step.querySelector('.overlay');
+    const overlay = step.querySelector('.overlay.main');
     const rect = step.getBoundingClientRect();
 
     if (rect.top <= center && rect.bottom >= center) {

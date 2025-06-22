@@ -72,27 +72,29 @@ main section {
 .scrolly .step .overlay {
   position: sticky;
   top: 50%;
-  left: 50%;
-  transform: translate(-50%, 50%);
-  width: 80%;
+  left: 10%;
+  transform: translate(0, 50%);
+  width: 70%;
   max-width: 700px;
-  text-align: center;
+  text-align: left;
   opacity: 0;
   transition: transform 0.6s ease, opacity 0.6s ease;
+  cursor: pointer;
+  border-radius: 12px;
 }
 
 .scrolly .step .overlay.show {
   opacity: 1;
-  transform: translate(-50%, -50%);
+  transform: translate(0, -50%);
 }
 
 .scrolly .step .overlay.exit-up {
-  transform: translate(-50%, -150%);
+  transform: translate(0, -150%);
   opacity: 0;
 }
 
 .scrolly .step .overlay.exit-down {
-  transform: translate(-50%, 150%);
+  transform: translate(0, 150%);
   opacity: 0;
 }
 
@@ -124,15 +126,31 @@ main section {
   background: rgba(0,0,0,0.6);
   padding: 2rem;
   max-width: 700px;
-  text-align: center;
+  text-align: left;
+  margin-left: 2rem;
+  border-radius: 12px;
   opacity: 0;
   transform: translateY(40px);
   transition: opacity 0.6s ease, transform 0.6s ease;
+  cursor: pointer;
 }
 
 .overlay.in-view {
   opacity: 1;
   transform: translateY(0);
+}
+
+.overlay.details {
+  display: none;
+  margin-left: 2rem;
+  margin-top: 1rem;
+  background: rgba(0,0,0,0.7);
+  border-radius: 12px;
+  cursor: default;
+}
+
+.overlay.details.visible {
+  display: block;
 }
 
 /* Darken bright background imagery */
@@ -174,7 +192,12 @@ h1, h2, p {
     padding: 1rem;
     max-width: 90%;
     font-size: 0.9rem;
-    text-align: center;
+    text-align: left;
+  }
+
+  .scrolly .step .overlay {
+    left: 5%;
+    width: 90%;
   }
 
   .shape {
