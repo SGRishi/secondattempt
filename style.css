@@ -69,6 +69,9 @@ main section {
   align-items: center;
   justify-content: center;
   position: relative;
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
 }
 
 .scrolly .step .overlay {
@@ -104,6 +107,7 @@ main section {
   align-items: flex-end;
   justify-content: flex-start;
   padding: 2rem;
+  min-height: 60vh;
 }
 
 .shape {
