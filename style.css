@@ -64,7 +64,7 @@ main section {
 }
 
 .scrolly .step {
-  height: 120vh;
+  height: 90vh;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -170,7 +170,7 @@ h1, h2, p {
 .icon {
   margin-left: 0.4rem;
   color: #E7E7E7;
-  font-size: inherit;
+  font-size: 0.8em;
 }
 
 .skill-logo {
@@ -226,6 +226,6 @@ h1, h2, p {
   }
 
   .scrolly .step {
-    height: 120vh;
+    height: 90vh;
   }
 }
