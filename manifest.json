@@ -1,0 +1,9 @@
+{
+  "name": "Rishikumar SG Resume",
+  "short_name": "Resume",
+  "start_url": "./index.html",
+  "display": "standalone",
+  "background_color": "#37383A",
+  "theme_color": "#37383A",
+  "icons": []
+}

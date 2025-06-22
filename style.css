@@ -10,6 +10,26 @@ body {
   overflow-x: hidden;
 }
 
+.skip-link {
+  position: absolute;
+  left: -999px;
+  top: auto;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+}
+
+.skip-link:focus {
+  left: 1rem;
+  top: 1rem;
+  width: auto;
+  height: auto;
+  padding: 0.5rem 1rem;
+  background: #51A6E7;
+  color: #000;
+  z-index: 1001;
+}
+
 header {
   position: fixed;
   top: 0;
@@ -154,7 +174,7 @@ main section {
 }
 
 .overlay {
-  background: rgba(0,0,0,0.6);
+  background: rgba(0,0,0,0.75);
   padding: 2.5rem;
   max-width: 1000px;
   text-align: left;
@@ -163,6 +183,7 @@ main section {
   opacity: 0;
   transform: translateY(40px);
   transition: opacity 0.8s ease, transform 0.8s ease;
+  color: #fff;
 }
 
 .overlay.in-view {
@@ -174,7 +195,7 @@ main section {
   margin-left: 2rem;
   margin-right: 2rem;
   margin-top: 1rem;
-  background: rgba(0,0,0,0.7);
+  background: rgba(0,0,0,0.85);
   border-radius: 12px;
 }
 

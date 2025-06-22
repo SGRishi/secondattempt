@@ -11,21 +11,26 @@ window.addEventListener('scroll', updateProgress);
 window.addEventListener('resize', updateProgress);
 updateProgress();
 
+const prefersReducedMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+
 // Animate text overlays on scroll
 const genericOverlays = document.querySelectorAll('section .overlay');
 const highlights = document.querySelectorAll('.highlight');
-const observer = new IntersectionObserver(entries => {
-  entries.forEach(entry => {
-    if (entry.isIntersecting) {
-      entry.target.classList.add('in-view');
-    } else {
-      entry.target.classList.remove('in-view');
-    }
-  });
-}, { threshold: 0.3 });
+let observer;
+if (!prefersReducedMotion) {
+  observer = new IntersectionObserver(entries => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        entry.target.classList.add('in-view');
+      } else {
+        entry.target.classList.remove('in-view');
+      }
+    });
+  }, { threshold: 0.3 });
 
-genericOverlays.forEach(el => observer.observe(el));
-highlights.forEach(el => observer.observe(el));
+  genericOverlays.forEach(el => observer.observe(el));
+  highlights.forEach(el => observer.observe(el));
+}
 
 const steps = document.querySelectorAll('.scrolly .step');
 
@@ -60,17 +65,19 @@ function handleSteps() {
   });
 }
 
-window.addEventListener('scroll', () => {
-  updateProgress();
+if (!prefersReducedMotion) {
+  window.addEventListener('scroll', () => {
+    updateProgress();
+    handleSteps();
+    handleParallax();
+  });
+
+  window.addEventListener('resize', () => {
+    updateProgress();
+    handleSteps();
+    handleParallax();
+  });
+
   handleSteps();
   handleParallax();
-});
-
-window.addEventListener('resize', () => {
-  updateProgress();
-  handleSteps();
-  handleParallax();
-});
-
-handleSteps();
-handleParallax();
+}
