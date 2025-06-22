@@ -143,6 +143,7 @@ main section {
 
 .overlay.details {
   margin-left: 2rem;
+  margin-right: 2rem;
   margin-top: 1rem;
   background: rgba(0,0,0,0.7);
   border-radius: 12px;
@@ -205,11 +206,18 @@ h1, h2, p {
     max-width: 90%;
     font-size: 0.9rem;
     text-align: left;
+    margin: 0 1rem;
+  }
+
+  .overlay.details {
+    margin-left: 1rem;
+    margin-right: 1rem;
   }
 
   .scrolly .step .overlay {
     left: 5%;
     width: 90%;
+    margin: 0;
   }
 
   .shape {
