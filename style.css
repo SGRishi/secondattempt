@@ -184,6 +184,8 @@ main section {
   transform: translateY(40px);
   transition: opacity 0.8s ease, transform 0.8s ease;
   color: #fff;
+  box-shadow: 0 0 12px rgba(255,255,255,0.4);
+  text-shadow: 0 0 6px rgba(255,255,255,0.8);
 }
 
 .overlay.in-view {
@@ -306,4 +308,32 @@ h1, h2, p {
     background-position: center;
     background-repeat: no-repeat;
   }
+}
+
+/* Starry background overlay */
+.stars {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+  z-index: 0;
+  background-image:
+    radial-gradient(white 1px, transparent 1px),
+    radial-gradient(white 1px, transparent 1px);
+  background-size: 50px 50px, 100px 100px;
+  animation: star-scroll 120s linear infinite;
+}
+
+@keyframes star-scroll {
+  from { transform: translateY(0); }
+  to { transform: translateY(-2000px); }
+}
+
+footer {
+  background: rgba(0,0,0,0.6);
+  color: #E7E7E7;
+  text-align: center;
+  padding: 1rem;
 }
