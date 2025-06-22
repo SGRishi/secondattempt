@@ -90,6 +90,9 @@ main section {
   align-items: center;
   justify-content: center;
   position: relative;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
   scroll-snap-align: start;
   transition: transform 0.6s ease;
 }
@@ -278,5 +281,8 @@ h1, h2, p {
 
   .scrolly .step {
     height: 90vh;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
   }
 }
