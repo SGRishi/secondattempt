@@ -76,8 +76,8 @@ main section {
   top: 50%;
   left: 10%;
   transform: translate(0, 50%);
-  width: 75%;
-  max-width: 800px;
+  width: 85%;
+  max-width: 1000px;
   text-align: left;
   opacity: 0;
   transition: transform 0.8s ease, opacity 0.8s ease;
@@ -127,7 +127,7 @@ main section {
 .overlay {
   background: rgba(0,0,0,0.6);
   padding: 2.5rem;
-  max-width: 800px;
+  max-width: 1000px;
   text-align: left;
   margin-left: 2rem;
   border-radius: 12px;
