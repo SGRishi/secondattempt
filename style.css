@@ -1,3 +1,7 @@
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   margin: 0;
   font-family: Arial, sans-serif;
@@ -24,11 +28,27 @@ header .name {
   font-weight: bold;
 }
 
-header nav {
+header .left {
+  display: flex;
+  align-items: center;
+}
+
+header nav.menu {
+  margin-left: 1.5rem;
+}
+
+header nav.menu a {
+  color: #E7E7E7;
+  margin-left: 1rem;
+  font-size: 1rem;
+  text-decoration: none;
+}
+
+header nav.social {
   margin-right: 2rem;
 }
 
-header nav a {
+header nav.social a {
   color: #E7E7E7;
   margin-left: 10px;
   font-size: 1.2rem;
@@ -222,7 +242,12 @@ h1, h2, p {
     padding: 0 0.5rem;
   }
 
-  header nav a {
+  header nav.menu a {
+    font-size: 0.9rem;
+    margin-left: 0.5rem;
+  }
+
+  header nav.social a {
     font-size: 1rem;
     margin-left: 6px;
   }
