@@ -319,16 +319,17 @@ h1, h2, p {
   height: 100%;
   pointer-events: none;
   z-index: 0;
+  background-color: rgba(0,0,0,0.4);
   background-image:
     radial-gradient(white 1px, transparent 1px),
     radial-gradient(white 1px, transparent 1px);
   background-size: 50px 50px, 100px 100px;
-  animation: star-scroll 120s linear infinite;
+  animation: star-scroll 60s linear infinite;
 }
 
 @keyframes star-scroll {
-  from { transform: translateY(0); }
-  to { transform: translateY(-2000px); }
+  from { background-position: 0 0, 0 0; }
+  to { background-position: 0 1000px, 0 500px; }
 }
 
 footer {
