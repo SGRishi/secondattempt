@@ -337,3 +337,8 @@ footer {
   text-align: center;
   padding: 1rem;
 }
+
+.demo-note {
+  font-style: italic;
+  margin-bottom: 0.5rem;
+}
