@@ -1,10 +1,10 @@
-# Second Attempt
+# Web Portfolio
 
-This project contains a single page resume for **Rishikumar SG**.
+This project contains a single page portfolio for **Rishikumar SG** that highlights my skills in creating modern websites.
 
 ## Purpose
 
-The page showcases experience, skills and information about Edinburgh while demonstrating parallax and scrolling animations.
+The page showcases my ability to design and build responsive websites using parallax and scrolling animations.
 
 ## Running Locally
 
@@ -21,4 +21,4 @@ A basic `npm test` script is included but currently only prints a placeholder me
 - `script.js` – scrolling animations
 - `manifest.json` – PWA manifest
 
-Feel free to fork and adapt for your own portfolio or resume.
+Feel free to adapt it for your own web development portfolio.
