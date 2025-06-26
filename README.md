@@ -1,6 +1,6 @@
 # Web Portfolio
 
-This project contains a single page portfolio for **Rishikumar SG** that highlights my skills in creating modern websites.
+**Demo Website:** This project is a demonstration portfolio for **Rishikumar SG** showcasing website creation skills.
 
 ## Purpose
 
