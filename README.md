@@ -1,10 +1,10 @@
-# Second Attempt
+# Web Portfolio
 
-This project contains a single page resume for **Rishikumar SG**.
+**Demo Website:** This project is a demonstration portfolio for **Rishikumar SG** showcasing website creation skills.
 
 ## Purpose
 
-The page showcases experience, skills and information about Edinburgh while demonstrating parallax and scrolling animations.
+The page showcases my ability to design and build responsive websites using parallax and scrolling animations.
 
 ## Running Locally
 
@@ -12,7 +12,7 @@ The page showcases experience, skills and information about Edinburgh while demo
 2. Open `index.html` in a modern web browser. No server is required.
 3. To develop or modify the JavaScript and styles, edit `script.js` and `style.css` then refresh the browser.
 
-A basic `npm test` script is included but currently only prints a placeholder message.
+Run `npm test` to verify that key sections exist.
 
 ## Project Structure
 
@@ -21,4 +21,4 @@ A basic `npm test` script is included but currently only prints a placeholder me
 - `script.js` – scrolling animations
 - `manifest.json` – PWA manifest
 
-Feel free to fork and adapt for your own portfolio or resume.
+Feel free to adapt it for your own web development portfolio.
